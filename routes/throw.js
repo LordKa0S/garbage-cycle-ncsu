@@ -22,6 +22,7 @@ router.post('/', async (_req, res) => {
      */
     const logs = JSON.parse(logContent);
     logs.unshift({ name: order[currentIdx], ts: new Date().toISOString() });
+    logs.splice(order.length);
     await writeFile(join(__dirname, '../conf/logs.json'), JSON.stringify(logs, null, 2));
     res.sendStatus(200);
 });
