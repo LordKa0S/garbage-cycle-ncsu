@@ -9,8 +9,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "pwshDebug": "pwsh -Command $env:DEBUG='garbage-cycle-ncsu:*'; node ./bin/www.js",
-    "start": "node ./bin/www.js"
+    "pwshDebug": "pwsh -Command $env:DEBUG='garbage-cycle-ncsu:*'; node --experimental-json-modules ./bin/www.js",
+    "start": "node --experimental-json-modules ./bin/www.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
