@@ -13,6 +13,7 @@ Keeps track of taking out the trash in shared living spaces
 ## Run
 
 ```
+npm ci
 npm start
 ```
 Browse to `localhost:3000`
